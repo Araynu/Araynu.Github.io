@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles4.css">
+    <title>Climax TV - Encuesta</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Climax TV</h1>
+        <nav>
+            <div class="menu-toggle">&#9776;</div>
+            <ul class="menu-container">
+                <li><a href="./index3.html">Inicio</a></li>
+                <li><a href="./index4.html">Encuesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-encuesta">
+        <h1>Encuesta de Satisfacción</h1>
+        <p>Gracias por visitar Climax TV. Tu opinión es importante para nosotros.</p>
+
+        <form id="encuestaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+            </select>
+
+            <label for="experiencia">¿Cómo calificarías tu experiencia en Climax TV?</label>
+            <select id="experiencia" name="experiencia">
+                <option value="excelente">Excelente</option>
+                <option value="muyBuena">Muy Buena</option>
+                <option value="buena">Buena</option>
+                <option value="regular">Regular</option>
+                <option value="mala">Mala</option>
+            </select>
+
+            <label for="favorita">¿Cuál es tu película o serie favorita en Climax TV?</label>
+            <input type="text" id="favorita" name="favorita" placeholder="Escribe el título aquí">
+
+            <label for="comentarios">¿Tienes algún comentario adicional?</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí"></textarea>
+
+            <button type="button" onclick="enviarEncuesta()">Enviar Encuesta</button>
+        </form>
+    </div>
+
+    <script src="./script3.js"></script>
+
+</body>
+
+</html>
